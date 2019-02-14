@@ -3,8 +3,7 @@
   "version": "1.0.1",
   "description": "waterfall flow",
   "main": "responsive_waterfall.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/leozdgao/responsive_waterfall.git"

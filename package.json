@@ -1,5 +1,5 @@
 {
-  "name": "responsive_waterfall",
+  "name": "geografa_maps",
   "version": "1.0.1",
   "description": "waterfall flow",
   "main": "responsive_waterfall.js",
@@ -13,5 +13,8 @@
   "bugs": {
     "url": "https://github.com/leozdgao/responsive_waterfall/issues"
   },
-  "homepage": "https://github.com/leozdgao/responsive_waterfall#readme"
+  "homepage": "https://github.com/leozdgao/responsive_waterfall#readme",
+  "dependencies": {
+    "responsive_waterfall": "^1.0.1"
+  }
 }

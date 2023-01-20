@@ -60,7 +60,8 @@ window.addEventListener('DOMContentLoaded', function(e) {
                 '-121.6903,45.3786,10.83,0',
                 '1.4209,45.2567,4.92,0',
                 '1.4209,45.2567,4.92,0',
-                '1.4209,45.2567,4.92,0'
+                '1.4209,43,4,4,60'
+                //3.47/30.2/43.39/-33.7/60
         ]
 
         // for each style create a new node
@@ -72,10 +73,13 @@ window.addEventListener('DOMContentLoaded', function(e) {
             const position = stylePosition[index];
             
             var image = document.createElement('img');
+            // use the styeElement to create a link to the style
             image.src = "https://api.mapbox.com/styles/v1/grafa/" + styelElement + "/static/" + position + "/660x250?access_token=pk.eyJ1IjoiZ3JhZmEiLCJhIjoiY2ptYjNtZWxnMDBrdDNwbnVicGJzOWg2NyJ9.9OulyCe3kEqMAXPbx1mKUA";
             // image.alt = styleName[element];
             box.appendChild(image);
-            var content = document.createElement('div');
+
+
+           var content = document.createElement('div');
             content.className = 'content';
             var title = document.createElement('h3');
             // use the styleElement to create a link to the style
@@ -85,6 +89,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
             link.appendChild(document.createTextNode(styleName[index]));
             title.appendChild(link);
             content.appendChild(title);
+            link.appendChild(image);
             var p = document.createElement('p');
             // p.appendChild(document.createTextNode('Content here'));
             content.appendChild(p);
@@ -92,4 +97,5 @@ window.addEventListener('DOMContentLoaded', function(e) {
         }
         return box;
     }
+
 });
